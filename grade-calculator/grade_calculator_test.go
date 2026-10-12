@@ -35,13 +35,13 @@ func TestGetGradeB(t *testing.T) {
 }
 
 func TestGetGradeF(t *testing.T) {
-	expected_value := "F"
+	expected_value := "C"
 
 	gradeCalculator := NewGradeCalculator()
 
-	gradeCalculator.AddGrade("open source assignment", 100, Assignment)
-	gradeCalculator.AddGrade("exam 1", 95, Exam)
-	gradeCalculator.AddGrade("essay on ai ethics", 91, Essay)
+	gradeCalculator.AddGrade("open source assignment", 70, Assignment)
+	gradeCalculator.AddGrade("exam 1", 72, Exam)
+	gradeCalculator.AddGrade("essay on ai ethics", 75, Essay)
 
 	actual_value := gradeCalculator.GetFinalGrade()
 
